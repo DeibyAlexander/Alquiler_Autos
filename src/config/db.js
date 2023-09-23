@@ -6,7 +6,7 @@ const dbConnection = async()=>{
             useNewUrlParser:true,
             useUnifiedTopology:true
         })
-        console.log("DB connected");
+        console.log("DB connected, Hola mundo, Por aqui paso santiago :P");
     } catch (error) {
         console.log(error);
         throw new Error("DB cant inicializate")

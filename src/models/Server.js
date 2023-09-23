@@ -12,6 +12,7 @@ import routerRegistroEnt from "../routes/registro_ent.routes.js";
 import routerReserva from "../routes/reserva.routes.js";
 import routerSucursalAuto from "../routes/sucursal_auto.routes.js";
 import routerSucursal from "../routes/sucursal.routes.js";
+import routerEndPoint from "../routes/endpoints.routes.js";
 
 class Server{
     constructor(){
@@ -28,6 +29,7 @@ class Server{
         this.reservaPath = "/API/"
         this.sucursalAutoPath = "/API/"
         this.sucursalPath = "/API/"
+        this.endPointPath = "/API/"
 
 
          //! Conexion para la base de datos
@@ -67,6 +69,7 @@ class Server{
         this.app.use(this.reservaPath, routerReserva)
         this.app.use(this.sucursalAutoPath, routerSucursalAuto)
         this.app.use(this.sucursalPath, routerSucursal)
+        this.app.use(this.endPointPath, routerEndPoint)
 
     }
 
