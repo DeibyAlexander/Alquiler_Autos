@@ -2,10 +2,16 @@ import express from "express";
 import cors from "cors";
 import dbConnection from "../config/db.js";
 
+
+import routerAlquiler from "../routes/alquiler.routes.js";
+
 class Server{
     constructor(){
         this.app =express()
         this.port = process.env.PORT65
+
+
+        this.alquilerPath = "/API/"
 
 
          //! Conexion para la base de datos
@@ -36,6 +42,7 @@ class Server{
     }
 
     routes(){
+        this.app.use(this.alquilerPath, routerAlquiler)
 
     }
 

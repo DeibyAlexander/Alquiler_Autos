@@ -1,9 +1,10 @@
 {
   "name": "alquiler_autos",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,5 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  },
-  "description": ""
+  }
 }
