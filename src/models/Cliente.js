@@ -5,7 +5,8 @@ const clienteSchema = Schema({
 
     id_cliente:{
         type:Number,
-        required: [true,'id_cliente is required']
+        required: [true,'id_cliente is required'],
+        unique:true
 
     },
     Nombre:{
