@@ -47,7 +47,7 @@ La solución propuesta consiste en desarrollar una aplicación web utilizando No
 3. Configura la conexión a la base de datos MongoDB en el archivo de configuración.
 4. Ejecuta la aplicación utilizando 
         
-        npm start
+        npm run start
 
 5. Accede a la aplicación a través de tu navegador web en [http://localhost:6655].
 
